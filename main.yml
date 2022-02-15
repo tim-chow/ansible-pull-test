@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: get route info
+      command: ip route show
+      register: result
+    - name: show route info
+      debug:
+        msg: "{{ result.stdout }}"
