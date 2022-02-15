@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: vagrant-101
   gather_facts: no
   tasks:
     - name: get route info
